@@ -11,26 +11,34 @@
 * A fourth Game object encompasses all of the game logic.
 * The game can be played in the command line based on user input.
 
-## How to Use 
+## Table of Contents
+
+- [Usage](#usage)
+- [Installation](#installation)
+- [Assets](#assets)
+- [Github Repository](#link-to-github-repository)
+
+## Usage 
 
 * 
+
+## Intallation 
+
+## Assets
  
-## Built Using
+### Built Using
 
 * node.js
 * JavaScript
 
-## Assets 
-
-
 ### Screenshots
 
-
-### Link to Deployed Application
-
+### Walkthrough Link
 
 
-This site was build using [Github Pages]()
+## Link to Github Repository
+
+Use this link to get to the [Github Repository]()
 
 
 
