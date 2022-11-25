@@ -73,3 +73,36 @@ test("subtracts from player's health", () => {
 
   expect(player.health).toBe(0);
 });
+
+// Test 7 - Gets attack value - verify's attack value is in range
+
+test("gets player's attack value", () => {
+  const player = new Player('Dave');
+  player.strength = 10;
+
+  expect(player.getAttackValue()).toBeGreaterThanOrEqual(5);
+  expect(player.getAttackValue()).toBeLessThanOrEqual(15);
+});
+
+// Test 8 - Adds Potions to inventory 
+
+test('adds a potion to the inventory', () => {
+  const player = new Player('Dave');
+  const oldCount = player.inventory.length; // need to keep track of old count, 
+  // so we can make sure adding the portion actually increases the player inventory length
+  player.addPotion(new Potion());
+
+  expect(player.inventory.length).toBeGreaterThan(oldCount);
+});
+
+// Test 9 - Consumes Potions - Index is being used to keep track
+
+test('uses a potion from inventory', () => {
+  const player = new Player('Dave');
+  player.inventory = [new Potion(), new Potion(), new Potion()];
+  const oldCount = player.inventory.length;
+
+  player.usePotion(1);
+
+  expect(player.inventory.length).toBeLessThan(oldCount);
+});
