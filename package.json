@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/Gdebortoli/jest-another-RPG#readme",
   "dependencies": {
-    "inquirer": "^9.1.4",
+    "inquirer": "^8.2.4",
     "jest": "^29.2.1"
   }
 }
